@@ -10,4 +10,3 @@ flt2 = 1.2
 
 complex1 = (1+2j)
 complex2 = (2+2j)
-
