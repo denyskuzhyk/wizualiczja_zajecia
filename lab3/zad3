@@ -1,0 +1,8 @@
+produkty = {"chleb": "szt",
+            "ser": "kg",
+            "masło": "kg",
+            "torba": "szt",
+            "woda": "l",
+            "mleko": "l"}
+
+lista = [i for i in produkty if produkty[i] == "szt"]
