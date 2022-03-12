@@ -1,0 +1,2 @@
+def pole_trapezu(a,b,wysokosc):
+    return ((a+b)*wysokosc)/2
