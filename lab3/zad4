@@ -1,0 +1,6 @@
+def trojkat(a, b, hypothenuse):
+    rownanie = a**2 + b**2
+    if rownanie == hypothenuse**2:
+        return "Jest prostokątny"
+    else:
+        return "Nie jest prostokątny"
