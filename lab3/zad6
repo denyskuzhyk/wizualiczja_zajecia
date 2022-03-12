@@ -1,0 +1,7 @@
+def iloczyn(a, b, c):
+    result = a
+    for i in range(c):
+        result *= b
+        a += 1
+
+    return result
