@@ -95,3 +95,34 @@ import numpy as np
 # cols = np.array([[0, 2], [0, 2]])
 # b = a[rows, cols]
 # print(b)
+
+def zadanie_1():
+    lista = np.arange(3, 18, 3)
+    return lista
+
+
+print(zadanie_1())
+
+def zadanie_2():
+    lista = np.array([1.2, 23.1, 43.23, 1.234])
+    lista2 = lista.astype('int64')
+    return lista2
+
+print(zadanie_2())
+
+def zadanie_3(n):
+    try:
+        n = int(n)
+        b = np.array([np.arange(1, n+1), np.arange(1, n+1)])
+        return b
+    except:
+        print('podana niepoprawy typ')
+
+print(zadanie_3(4))
+
+def zadanie_4(a, b):
+
+    lista = np.logspace(1, b, a)
+    return lista
+
+print(zadanie_4(2, 4))
