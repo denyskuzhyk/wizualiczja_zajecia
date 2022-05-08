@@ -121,16 +121,32 @@ wykres.set_title('Populacja na kontynentach')
 plt.show()
 
 
-
+# grupa = df3.groupby('')
 
 # daty = pd.date_range('20220507', periods=5)
 # print(daty)
 # df2 = pd.DataFrame(np.random.randn(5, 4), index=daty, columns=list('ABCD'))
 # print(df2)
 
-# df3 = pd.read_csv('dane.csv', header=0, sep=';', decimal='.')
-# # print(df3)
+df3 = pd.read_csv('dane.csv', header=0, sep=';', decimal='.')
+# print(df3)
+# grupa = df3.groupby('')
+# grupa = df3.groupby('Imię i nazwisko').agg({'Wartość zamówienia': ['sum']})
+# grupa.plot(kind='pie', subplots=True, autopct='%.2f %%',
+#            fontsize=20, figsize=(8, 6), colors=['red', 'green'])
 #
+# plt.legend(loc='upper left')
+# plt.savefig('plot.png')
+# plt.show()
+
+seria = pd.Series(np.random.rand(1000))
+
+seria.cumsum()
+print(seria)
+
+seria.plot()
+plt.show()
+
 # xlsx = pd.ExcelFile('imiona.xlsx')
 # df4 = pd.read_excel(xlsx, header=0)
 # print(df4)
